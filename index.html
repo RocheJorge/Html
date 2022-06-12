@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<!-- Lenguaje en el que se va a escribir el codigo -->
+<html lang="es">
+
+<head>
+    <!-- Juego de caracteres en el que esta codificado la pagina -->
+    <meta charset="UTF-8">
+    <!-- Trate de que el contenido de este documento para internet explorer lo iguale a microsoft edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Zona visible del navegador donde se renderiza el documento html -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo del documento html, debe estar entre 55 y 65 caracteres -->
+    <title>Aprendiendo HTML</title>
+    <!-- Meta descripcion de la pagina, no mas de 165 caracteres, es importante que cada seccion de la pagina tenga una descripcion diferente -->
+    <meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML">
+    <!-- Enlazar hoja de estylo en cascada -->
+    <link rel="stylesheet" href="assets/estilos.css">
+    <!-- url indicandole como publicidad de black friday o cupon de descuento -->
+    <link rel="canonica" href="http://tudominio.com/la-url-canonica">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <!-- favicon para dispositivos moviles -->
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <!-- color para la barra de navegacion en los dispositivos moviles -->
+    <meta name="theme-color" color="#FF6600">
+    <!-- metadata para redes sociales de opengraph.co -->
+    <meta property="og:title" content="Aprendiendo HTML">
+    <meta property="og:description" content="En esta pagina estamos aprendiendo los fundamentos de HTML">
+    <meta property="og:image" content="https://tudominio.com/img/periodic-table-of-html-elements.png">
+    <meta property="og:url" content="https://tudominio.com/index.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@jdrc95">
+</head>
+
+<body>
+    <!-- Encabezados -> Es recomendable usar 1 solo H1 para el documento html -->
+
+    <h2 id="encabezados">Encabezados</h2>
+
+    <h1>Encabezado nivel 1</h1>
+    <h2>Encabezado nivel 2</h2>
+    <h3>Encabezado nivel 3</h3>
+    <h4>Encabezado nivel 4</h4>
+    <h5>Encabezado nivel 5</h5>
+    <h6>Encabezado nivel 6</h6>
+    <hr>
+
+    <!-- parrafos -->
+
+    <h2 id="texto-basico">Etiquetas de texto basicas</h2>
+
+    <p>Parrafos</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officiis, porro, tempora placeat earum quas
+        ipsum numquam explicabo a voluptatum consectetur suscipit quasi qui reprehenderit, beatae nobis quis atque?
+        Sequi!
+    </p>
+    <p>
+        Palabras en:
+        <b>Negrita</b>,
+        <i>Italica</i>,
+        <u>Subrayado</u>,
+        e=mc<sup>2</sup>,
+        H<sub>2</sub>O,
+        <small>letras pequeñas</small>
+    </p>
+    <hr>
+
+    <h2 id="texto-semantico">Etiquetas de texto semanticas</h2>
+
+    <p>
+        <strong>Este texto es importante</strong>
+        <em>Este texto hace enfasis</em>
+    </p>
+    <blockquote>Yo solo se, que no se nada</blockquote>
+    <cite>Socrates</cite>
+    <hr>
+
+    <h2>Etiquetas de saltos</h2>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi nesciunt nostrum nam, vitae aliquam tempora nemo
+        <!-- Salto de pagina -->
+        <br>
+        Este es un salto de pagina
+        minus, quasi excepturi porro quae! Omnis, optio minima excepturi velit ut unde sequi quae?
+    </p>
+    <!-- <hr> define saltos semanticos entre bloques de contenido -->
+    <hr>
+
+    <h2>Etiquetas de formateo</h2>
+
+    <p>
+        <pre>
+            Tareas por hacer:
+            - HTML:
+                - Terminar de grabar
+                - subir a youtube
+            - CSS:
+                - Enseñar CSS
+        </pre>
+    </p>
+    <p>
+        <code>Este texto esta en formato de codigo</code>
+    </p>
+    <hr>
+
+    <!-- Etiquetas Semanticas Estructurales -->
+
+    <h2>Etiquetas Semanticas Estructurales</h2>
+
+    <div>Es una etiqueta contenedora que no tiene semantica</div>
+    <header>header -> Cabecera de un sitio web o de una seccion</header>
+    <main>
+        main -> Define la seccion principal del documento, solo puede existir una etiqueta main por documento
+    </main>
+    <footer>footer -> Pie de pagina de un sitio web o de una seccion</footer>
+    <nav>nav -> representa una navegacion</nav>
+    <article>
+        article -> Representa una seccion autocontenido
+    </article>
+    <aside>aside -> Representa contenido complementario o secundario</aside>
+    <section>section -> Representa una seccion de contenido generico</section>
+    <address>address -> Representa una informacion de contacto</address>
+    <hr>
+
+    <!-- Etiquetas de Bloque VS Etiquetas de Linea -->
+
+    <h2>Etiquetas de Bloque VS Etiquetas de Linea</h2>
+
+    <div>La etiqueta de bloque por excelencia es la div, una etiqueta de bloque es aquella que genera saltos de linea
+        con sus etiquetas hermanas
+    </div>
+    <span>La etiqueta de linea por excelencia es la span, una etiqueta de linea solo ocupa el espacio necesario que
+        tiene su contenido
+    </span>
+    <hr>
+
+    <!-- Estilos CSS en HTML -->
+
+    <h2>Estilos CSS en HTML</h2>
+    <hr>
+
+    <!-- Como agregar imagenes -->
+
+    <h2>Como agregar imagenes</h2>
+
+    <img src="img/periodic-table-of-html-elements.png" alt="Tabla Periodica">
+    <img src="img/puesta-sol.jpg" alt="Puesta de sol">
+    <img src="img/this-is-fine.gif" alt="meme">
+    <img src="img/kEnAi.svg" alt="kenai">
+    <hr>
+
+    <!-- Figuras -->
+
+    <h2>Como agregar Figuras</h2>
+
+    <figure>
+        <img src="img/periodic-table-of-html-elements.png" alt="Tabla periodica">
+        <figcaption>Tabla periodica</figcaption>
+    </figure>
+    <hr>
+
+    <!-- Listas -->
+
+    <h2>Listas ordenadas</h2>
+
+    <h3>Las estaciones del año</h3>
+    <ol>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+
+    <ol start="3">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+
+    <ol reversed>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+
+    <ol type="I">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <hr>
+
+    <h2>Listas Desordenadas</h2>
+
+    <h3>Cosas por hacer</h3>
+    <ul>
+        <li>Fragmentos de html</li>
+        <li>Editar el video final</li>
+        <li>Subirlo a youtube</li>
+    </ul>
+
+    <ul type="circle">
+        <li>Fragmentos de html</li>
+        <li>Editar el video final</li>
+        <li>Subirlo a youtube</li>
+    </ul>
+
+    <ul type="square">
+        <li>Fragmentos de html</li>
+        <li>Editar el video final</li>
+        <li>Subirlo a youtube</li>
+    </ul>
+    <hr>
+
+    <h2>Listas de Definicion</h2>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Es un lenguaje demarcado que define el contenido de la web</dd>
+        <dt>CSS</dt>
+        <dd>Es un lenguaje de definicion que da estilos al codigo html</dd>
+        <dt>JavaScript</dt>
+        <dd>Es un lenguaje de la web</dd>
+    </dl>
+    <hr>
+
+    <!-- Tablas -->
+
+    <h2>Tablas</h2>
+
+    <table>
+        <!-- filas -->
+        <tr>
+            <!-- celdas -->
+            <td>Nombre</td>
+            <td>Constelacion</td>
+            <td>Tipo</td>
+        </tr>
+
+        <tr>
+            <td>Ikki</td>
+            <td>Fenix</td>
+            <td>Bronce</td>
+        </tr>
+
+        <tr>
+            <td>Shain</td>
+            <td>Ofuco</td>
+            <td>Plata</td>
+        </tr>
+
+        <tr>
+            <td>Saga</td>
+            <td>Geminis</td>
+            <td>Dorado</td>
+        </tr>
+
+    </table>
+
+    <!-- Tabla mas elaborada -->
+
+    <table>
+
+        <!-- cabezera de la tabla -->
+        <thead>
+            <!-- titulo de la tabla -->
+            <tr>
+                <th colspan="3">Tabla de los Santos de Atena</th>
+            </tr>
+            <!-- se usa th -->
+            <th>Nombre</th>
+            <th>Constelacion</th>
+            <th>Tipo</th>
+        </thead>
+
+        <!-- cuerpo de la tabla -->
+        <tbody>
+
+            <tr>
+                <td>Ikki</td>
+                <td>Fenix</td>
+                <td>Bronce</td>
+            </tr>
+
+            <tr>
+                <td>Shain</td>
+                <td rowspan="2">Ofiuco</td>
+                <td>Plata</td>
+            </tr>
+
+            <tr>
+                <td>Odiseo</td>
+                <td>Dorado</td>
+            </tr>
+
+            <tr>
+                <td>Saga</td>
+                <td>Geminis</td>
+                <td>Dorado</td>
+            </tr>
+        </tbody>
+
+        <!-- Pie de pagina de la tabla -->
+        <tfoot>
+            <tr>
+                <th colspan="3">Pie de pagina de la tabla</th>
+            </tr>
+        </tfoot>
+
+    </table>
+    <hr>
+
+    <!-- Enlaces -->
+
+    <h2>Enlaces</h2>
+
+    <!-- relativos -> En el mismo documento -->
+    <a href="hola.html">Hacia la pagina Hola</a>
+    <br>
+
+    <!-- externos -> Hacia otro sitio web -->
+    <!-- target -> abre en otra pestaña -->
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <br>
+
+    <!-- con imagenes -->
+    <a href="https://www.google.com/" target="_blank">
+        <img src="img/kEnAi.svg" alt="google" width="40" height="40">
+    </a>
+
+    <!-- Enlaces internos -> en la misma pagina -->
+
+    <h3>Temario del curso</h3>
+
+    <ul>
+        <!-- atajo de emmet -> li*18>a -->
+        <li><a href="index.html#encabezados">Encabezado HTML</a></li>
+        <li><a href="index.html#texto-basico">Etiquetas Basicas</a></li>
+        <li><a href="index.html#texto-semantico">Etiquetas semanticas</a></li>
+    </ul>
+
+    <!-- Protocolos para telefono -->
+
+    <!-- correo -->
+    <a href="mailto:correo@correo.com">Enlace a correo electronico</a>
+    <br>
+    <!-- telefono -->
+    <a href="tel:+5843534543545345">Enlace a telefono</a>
+    <br>
+    <!-- whatsapp -->
+    <a href="https//api.whatsapp.com/send?phone=+5853453&text=hola">Enlace hacia whatsapp</a>
+    <hr>
+
+    <!-- Elementos Interactivos -->
+
+    <h2>Elementos Interactivos</h2>
+
+    <button>Este es un boton</button>
+
+    <!-- acordeon -->
+    <details>
+        <summary>Titulo del acordeon</summary>
+        <article>
+            <h3>Contenido del acordeon</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero cumque voluptas quae. Autem suscipit a
+                quisquam quas exercitationem commodi sit non magnam animi asperiores aperiam, eos esse, mollitia
+                expedita.</p>
+        </article>
+    </details>
+
+    <details open>
+        <summary>Titulo del acordeon</summary>
+        <article>
+            <h3>Contenido del acordeon</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero cumque voluptas quae. Autem suscipit a
+                quisquam quas exercitationem commodi sit non magnam animi asperiores aperiam, eos esse, mollitia
+                expedita.</p>
+        </article>
+    </details>
+    <hr>
+
+    <!-- Audio y video -->
+
+    <h2>Audio y video</h2>
+
+    <!-- audio -->
+    <audio src="media/Feels-PatrickPatrikios.mp3" controls preload></audio>
+    <br>
+
+    <!-- video -->
+    <video src="media/kenai.mp4" controls preload poster="img/puesta-sol.jpg"></video>
+    <hr>
+
+    <!-- Iframes -> se pueden incorporar videos de youtube, google maps, otros sitios web externos en la pagina -->
+
+    <h2>Iframes</h2>
+
+    <iframe src="hola.html" frameborder="0"></iframe>
+    <hr>
+
+    <!-- Formularios -->
+
+    <h2>Elementos de Formulario</h2>
+
+    <!-- input de texto -->
+    <h3>input de texto</h3>
+    <input type="text" name="" id="">
+    <br>
+
+    <!-- input de checkbox -->
+    <h3>input de checkbox</h3>
+    <input type="checkbox" name="" id="">
+    <br>
+
+    <!-- input de radio -->
+    <h3>input de radio</h3>
+    <input type="radio" name="" id="">
+    <br>
+
+    <!-- input de tipo fecha -->
+    <h3>input de tipo fecha</h3>
+    <input type="date" name="" id="">
+    <br>
+
+    <!-- input de tipo color -->
+    <h3>input de tipo color</h3>
+    <input type="color" name="" id="">
+    <br>
+
+    <!-- input de tipo boton -->
+    <h3>input de tipo boton</h3>
+    <input type="button" value="Boton">
+    <br>
+
+    <!-- input de tipo submit -->
+    <h3>input de tipo submit</h3>
+    <input type="submit" value="submit">
+    <br>
+
+    <!-- input de tipo reset -->
+    <h3>input de tipo reset</h3>
+    <input type="reset" value="reset">
+    <br>
+
+    <!-- input de tipo file -->
+    <h3>input de tipo file</h3>
+    <input type="file" name="" id="">
+    <br>
+
+    <!-- input de tipo oculto -> Sirven para que cuando el formulario se envia uno como programador pueda enviar algun valor -->
+    <h3>input de tipo oculto -> Sirven para que cuando el formulario se envia uno como programador pueda enviar algun
+        valor</h3>
+    <input type="hidden" name="idioma" value="es">
+    <br>
+
+    <!-- input de tipo email -->
+    <h3>input de tipo email</h3>
+    <input type="email" name="" id="">
+    <br>
+
+    <!-- input de tipo numero -->
+    <h3>input de tipo numero</h3>
+    <input type="number" name="" id="">
+    <br>
+
+    <!-- input de tipo telefono -->
+    <h3>input de tipo telefono</h3>
+    <input type="tel" name="" id="">
+    <br>
+
+    <!-- input de tipo password -->
+    <h3>input de tipo password</h3>
+    <input type="password" name="" id="">
+    <br>
+
+    <!-- input de tipo search -->
+    <h3>input de tipo search</h3>
+    <input type="search" name="" id="">
+    <br>
+
+    <!-- area de texto -->
+    <h3>Input de area de texto</h3>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br>
+
+    <!-- Input de select -->
+    <h3>Input de select</h3>
+    <select name="" id="">
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JS</option>
+    </select>
+    <hr>
+
+    <!-- Atributos de los input -->
+
+    <h2>Atributos de los input</h2>
+
+    <!-- campo de solo lectura -->
+    <h3>campo de solo lectura</h3>
+    <input type="text" name="" id="" readonly disabled>
+    <br>
+
+    <!-- placeholder -->
+    <h3>Placeholder</h3>
+    <input type="text" placeholder="Escriba su nombre">
+    <br>
+
+    <h3>Etiqueta formulario</h3>
+
+    <!-- el atributo action es a donde se va a enviar el formulario -->
+    <!-- method -> metodo por el que se envia -->
+    <form action="" method="POST" autocomplete="off">
+
+        <label for="usuario">Usuario:</label>
+        <!-- name -> nombre cuando se envia el input -->
+        <input type="text" name="usuario" id="usuario" placeholder="Ingresa usuario" pattern="^[A-Za-z]+$"
+            title="Campo de solo letras" required>
+        <br>
+
+        <label for="password">Contraseña</label>
+
+        <input type="password" name="password" id="password" placeholder="Ingresa contraseña" required>
+        <br>
+
+        <input type="submit" value="Enviar">
+        <br>
+
+        <input type="reset" value="Restablecer">
+    </form>
+
+    <!-- Selects, Radios y Checkbox -->
+
+    <h4>Selects, Radios y Checkbox</h4>
+
+    <form>
+        <!-- selects -->
+        <p>Elige tu idioma</p>
+
+        <select name="idioma" id="" required>
+            <option value="" selected>Elige una opcion</option>
+            <option value="es">Español</option>
+            <option value="en">Ingles</option>
+            <option value="fr">Frances</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Portugues</option>
+        </select>
+
+        <!-- radio -->
+        <p>Elige tu lenguaje de programacion favorito</p>
+
+        <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+        <label for="radio-js">JavaScript</label>
+
+        <input type="radio" name="lenguaje" id="radio-py" value="py">
+        <label for="radio-js">Python</label>
+
+        <input type="radio" name="lenguaje" id="radio-php" value="php">
+        <label for="radio-js">PHP</label>
+
+        <!-- checkbox -->
+        <p>Elige tus intereses</p>
+
+        <label for="">
+            <input type="checkbox" name="intereses" value="deportes">
+            Deportes
+        </label>
+
+        <label for="">
+            <input type="checkbox" name="intereses" value="finanzas">
+            Finanzas
+        </label>
+
+        <label for="">
+            <input type="checkbox" name="intereses" value="salud">
+            Salud
+        </label>
+
+        <label for="">
+            <input type="checkbox" name="intereses" value="politica">
+            Politica
+        </label>
+
+        <label for="">
+            <input type="checkbox" name="intereses" value="ecologia">
+            Ecologia
+        </label>
+
+        <p>
+            <label for="">
+                <input type="checkbox" name="terminos" required>
+                ¿Aceptas terminos y condiciones?
+            </label>
+        </p>
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reset">
+    </form>
+
+    <!-- Formulario de contacto -->
+
+    <h4>Formulario de Contacto</h4>
+
+    <form action="" autocomplete="off">
+
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            title="Solo acepta letras y espacios en blanco" required>
+        <br>
+
+        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+            title="Formato de correo invalido" required>
+        <br>
+
+        <textarea name="comentarios" id="" cols="30" rows="10" required>
+
+        </textarea>
+        <br>
+
+        <input type="submit">
+
+    </form>
+    <hr>
+
+    <!-- Data Atributes -->
+
+    <h2>Data Attributes</h2>
+
+    <ul>
+        <li data-id="1" data-name="spring">Primavera</li>
+        <li data-id="2" data-name="summer">Verano</li>
+        <li data-id="3" data-name="autumn">Invierno</li>
+        <li data-id="4" data-name="winter">Otoño</li>
+    </ul>
+    <hr>
+
+    <!-- Accesibilidad web -> Personas que poseen ciertas capacidades que nos les permite visualizar la pagina -->
+
+    <h2>Accesibilidad Web</h2>
+
+    <h3 role="title">Estaciones del año</h3>
+
+    <ul role="list">
+        <li tabindex="1" role="listitem">Primavera</li>
+        <li tabindex="2" role="listitem">Verano</li>
+        <li tabindex="3" role="listitem">Otoño</li>
+        <li tabindex="4" role="listitem">Invierno</li>
+    </ul>
+
+    <a href="#" role="link" aria-label="En este enlace encontraras mas informacion sobre las estaciones del año"
+        target="_blank">Mas informacion....</a>
+
+    <!-- Scripts en HTML -> Se colocan antes de la etiqueta body -->
+    <h2>Scripts en HTML</h2>
+    <script src="assets/codigos.js"></script>
+
+</body>
+
+</html>
